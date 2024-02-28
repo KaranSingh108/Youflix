@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Chakra+Petch:wght@500&family=Freckle+Face&family=Inter:wght@200;300&family=Josefin+Sans&family=Righteous&family=Source+Sans+Pro:wght@300;400;600&display=swap');
+*{
+    font-family: 'Source Sans Pro', sans-serif; 
+    z-index: 2;
+    user-select: none;
+}
+body{
+    padding: 0;
+    margin: 0;
+    /* background-image:url(images/bg.jpg); */
+    background-size: 100%;
+    background-color: rgb(45,45,45);
+    
+
+}
+.header{
+    display: grid;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    height: 3.5rem;
+    z-index: 100 !important;
+    /* background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5)); */
+    padding-bottom: 1rem;
+
+    /* border-bottom: .5px solid black; */
+}
+.overlay-container{
+    position: absolute;
+}
+.overlay-container img{
+    position: relative;
+    width: 100%;
+    height: 90%;
+}
+ .overlay {
+    position: absolute;
+    z-index: 100 !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(to top, rgba(254,108,0, 0.4) 0, rgba(0, 0, 0, .5) 20%, rgba(0, 0, 0, 0.8) 100%);
+  }
+
+.logo-container{
+    position: relative;
+    padding-left: 10rem;
+}
+.logo-image{
+    width: 18%;
+    position: absolute;
+  
+}
+.button-container{
+    display: flex;
+    position: relative;
+    justify-content:flex-end;
+    right: 10rem;
+    top: 1.5rem;
+    width: 100%;    
+    float: right;
+    
+    
+}
+.language-container{
+    margin-right: 1rem;
+    position: relative;
+    /* color: white; */
+    color: white;
+    padding: .1rem 1rem .2rem 1rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: .1px solid rgba(255, 255, 255, 0.747);
+    width: fit-content;
+    height: fit-content;
+    border-radius: .2rem;
+    cursor: pointer;
+
+
+}
+.language-container i{
+    margin-right: .5rem;
+}
+.language-container select{
+    background: none;
+    outline: none;
+    color: white;
+    border: none;
+    font-size: 1.1rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding-top: .1rem;
+    cursor: pointer;
+
+
+    
+}
+
+.signin-btn{
+    background-color: rgba(254, 108, 0, 1);
+    color: white;
+    padding: .3rem .8rem .4rem .8rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: .15rem;
+
+
+    
+}
+.home-page-container{
+    position: relative;
+    z-index: 101;
+    top: 14rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+
+}
+.home-page{
+    color: white;
+}
+.home-page h1{
+    font-size: 3rem;
+}
+.home-page h3{
+    font-size: 2rem;
+}
+.home-page h4{
+    font-size: 1.3rem;
+}
+.start-container input{
+background-color: rgba(0, 0, 0, 0.479);
+border: .1px solid #888888a8;
+border-radius: .2rem;
+font-size: 1rem;
+color: white;
+font-weight: bold;
+padding: 1rem;
+width: 22rem;
+}
+.start-container input::placeholder{
+    color: #cdcdcd;
+}
+.start-container button{
+    padding: .9rem 1.5rem .9rem 1.5rem;
+    background-color: rgba(254, 108, 0, 1);
+    color: white;
+    border: none;
+    border-radius: .2rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.start-container button i{
+    margin-left: .5rem;
+    
+}
+.tv-container{
+    display: flex;
+    background-color: black;
+    position: relative;
+    top: 29rem;
+    width: 100%;
+    height: 30rem;
+    color: white;
+    padding-top: 3rem;
+}
+.tv-container .tv-text{
+    position: relative;
+    top: 6rem;
+    left: 6rem;
+}
+.tv-text h1{
+    font-size: 3rem;
+    font-weight: 800;
+    width: 80%;
+}
+.tv-text p{
+    font-size: 1.5rem;
+    width: 60%;
+}
+.tv-video{
+    position: relative;
+    right: 4rem;
+}
+.tv-video img{
+    width: 90%;
+}
+.mobile-container{
+    display: flex;
+    background-color: black;
+    position: relative;
+    top: 29.5rem;
+    width: 100%;
+    height: 30rem;
+    color: white;
+    padding-top: 3rem;
+}
+.mobile-text{
+    position: relative;
+    top: 6rem;
+    /* right: 3rem;    */
+}
+.mobile-text h1{
+    font-size: 3rem;
+    font-weight: 800;
+    width: 80%;
+}
+.mobile-text p{
+    font-size: 1.5rem;
+    width: 60%;
+}
+.mobile-video{
+    position: relative;
+    left: 3rem;
+    
+}
+.mobile-video img{
+    width: 90%;
+}
+.short-box{
+    border: .1px solid #888888a8;
+    border-radius:.3rem;
+    width: 18rem;
+    height: 5rem;
+    padding: .5rem;
+    position: absolute;
+    top: 20rem;
+    left: 10.5rem;
+    background-color: black;
+}
+.short-box span{
+    display: flex;
+    flex-direction: column;
+    /* width: 50%; */
+    position: relative;
+    top: -5rem;
+    margin-left: 5.5rem;
+}
+.short-box span a{
+    text-decoration: none;
+    
+}
+.short-box>img{
+    width: 25%;
+    height: 5.3rem;
+    position: relative;
+}
+.short-box .download-gif{
+    display: block;
+    position: relative;
+    top: -8rem;
+    left: 12rem;
+    height: auto;
+}
+.device-pile-container{
+    display: flex;
+    background-color: black;
+    position: relative;
+    top: 30rem;
+    width: 100%;
+    height: 30rem;
+    color: white;
+    padding-top: 3rem;
+}
+.device-text{
+    position: relative;
+    top: 6rem;
+    left: 6rem;
+}
+.device-text h1{
+    font-size: 3rem;
+    font-weight: 800;
+    width: 80%;
+}
+.device-text p{
+    font-size: 1.5rem;
+    width: 60%;
+}
+.device-video{
+    position: relative;
+    right: 5rem;
+}
+.device-video img{
+    width:82%;
+
+}
+.kids-container{
+    display: flex;
+    background-color: black;
+    position: relative;
+    top: 30.5rem;
+    width: 100%;
+    height: 30rem;
+    color: white;
+    padding-top: 3rem;
+}
+.kids-text{
+    position: relative;
+    top: 6rem;
+    /* right: 6rem;    */
+    margin-left: 15rem;
+}
+.kids-text h1{
+    font-size: 3rem;
+    font-weight: 800;
+    width: 80%;
+}
+.kids-text p{
+    font-size: 1.5rem;
+    width: 60%;
+}
+.kids-video{
+    position: relative;
+    left: 6rem;
+    top: 4rem;
+}
+.kids-video img{
+width: 100%;
+}
+.faq{
+    display: grid;
+    background-color: black;
+    position: relative;
+    top: 31rem;
+    width: 100%;
+    height: fit-content;
+    color: white;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+
+}
+.faq h1{
+    text-align: center;
+    width: 100%;
+    font-size: 3rem;
+}
+.faq-btn{
+    display: flex;
+    justify-self: center;
+    background-color: rgb(45,45,45);
+    width: 80%;
+    padding-left:2rem;
+    border-radius: .1rem;
+    margin: .3rem;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+.faq-btn:hover{
+    background-color: rgb(73, 73, 73) ;
+}
+.faq-btn h3{
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-indent: .5rem;
+}
+.faq-btn span{
+    display: block;
+    font-size: 3rem;
+    position: relative;
+    right: 2rem;
+    top: .6rem;
+
+}
+.faq-btn span.ative-span{
+    transform: rotate(-45deg);
+}
+.faq .start-container{
+    margin-top: 2rem;
+    margin: auto;
+    position: relative;
+    top: 1rem;
+}
+.faq-btn .start-container h3{
+    width: 100%;
+    text-align: center;
+    font-size:2rem;
+}
+.faq-box{
+    display: block;
+    justify-self: center;
+    background-color: rgb(45,45,45);
+    width: 80%;
+    padding-left:2rem;
+    border-radius: .1rem;
+    margin: .3rem;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 1.4rem;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity .3s ease-out;
+}
+
+.faq-box.active{
+    max-height: 100%;
+    opacity: 1;
+}
+
+.footer{
+    display: grid;
+    background-color: black;
+    position: relative;
+    top: 31.5rem;
+    width: 100%;
+    height: fit-content;
+    color: white;
+    padding-top: 3rem;
+    padding-bottom: 2rem;   
+}
+.footer h3{
+    font-weight: 400;
+    color: #cdcdcd;
+    margin-left: 6rem;
+}
+.footer h3 a{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.footer h3 a:hover{
+    text-decoration: none;
+}
+.footer-links ul{
+display: block;
+width:90%;
+margin: auto;
+margin-bottom: 1rem;
+column-count: 3;
+column-gap: 1rem;
+
+
+}
+.footer-links ul li{
+    margin: .8rem;
+    list-style: none;
+    font-weight: 300;
+    color: #cdcdcd;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.footer-links ul li:hover{
+    text-decoration: none;
+}
+.footer .language-container{
+    margin-left: 6rem;
+    margin-top: 1rem;
+}
+.footer h4{
+    color: #cdcdcd;
+    margin-left: 6rem;
+    font-weight: 300;
+}
